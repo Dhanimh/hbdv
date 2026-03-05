@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Untuk Adek</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Poppins',sans-serif;
+background:linear-gradient(180deg,#0f2027,#203a43,#2c5364);
+color:white;
+overflow-x:hidden;
+}
+
+/* opening */
+
+.opening{
+position:fixed;
+width:100%;
+height:100vh;
+background:black;
+display:flex;
+align-items:center;
+justify-content:center;
+flex-direction:column;
+cursor:pointer;
+z-index:10;
+}
+
+.opening h1{
+font-size:32px;
+font-family:'Playfair Display',serif;
+margin-bottom:10px;
+}
+
+.opening p{
+opacity:0.7;
+}
+
+/* main */
+
+.main{
+display:none;
+padding:60px 20px;
+display:flex;
+justify-content:center;
+}
+
+.container{
+max-width:800px;
+background:rgba(255,255,255,0.08);
+backdrop-filter:blur(12px);
+padding:40px;
+border-radius:20px;
+box-shadow:0 0 40px rgba(0,0,0,0.5);
+}
+
+h1{
+text-align:center;
+font-family:'Playfair Display',serif;
+margin-bottom:25px;
+}
+
+p{
+margin-bottom:18px;
+line-height:1.8;
+font-size:15px;
+}
+
+/* slideshow */
+
+.slideshow{
+text-align:center;
+margin-bottom:25px;
+}
+
+.slideshow img{
+width:100%;
+max-width:350px;
+border-radius:15px;
+box-shadow:0 10px 30px rgba(0,0,0,0.5);
+opacity:1;
+transform:scale(1);
+transition:opacity 1.5s ease, transform 4s ease;
+}
+
+.slideshow img.fadeout{
+opacity:0;
+transform:scale(1.1);
+}
+
+/* stars */
+
+.star{
+position:fixed;
+width:2px;
+height:2px;
+background:white;
+animation:blink 2s infinite alternate;
+}
+
+@keyframes blink{
+from{opacity:0.2}
+to{opacity:1}
+}
+
+/* hearts */
+
+.heart{
+position:fixed;
+bottom:-20px;
+font-size:20px;
+animation:floatUp 7s linear infinite;
+opacity:0.7;
+}
+
+@keyframes floatUp{
+0%{transform:translateY(0);opacity:0}
+50%{opacity:0.7}
+100%{transform:translateY(-100vh);opacity:0}
+}
+
+/* balloons */
+
+.balloon{
+position:fixed;
+bottom:-100px;
+font-size:35px;
+animation:balloonUp linear infinite;
+}
+
+@keyframes balloonUp{
+0%{transform:translateY(0);}
+100%{transform:translateY(-120vh);}
+}
+
+.signature{
+margin-top:30px;
+text-align:right;
+opacity:0.8;
+}
+
+/* FIREWORK */
+
+.firework{
+position:fixed;
+width:6px;
+height:6px;
+border-radius:50%;
+background:white;
+animation:firework 1.5s ease-out forwards;
+}
+
+@keyframes firework{
+
+0%{
+transform:translate(0,0);
+opacity:1;
+}
+
+100%{
+transform:translate(var(--x),var(--y));
+opacity:0;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="opening" onclick="start()">
+<h1>Untuk Seseorang Kesayanganku 🎂</h1>
+<p>Klik untuk membuka pesan</p>
+</div>
+
+<div class="main" id="main">
+
+<div class="container">
+
+<h1>✧ Happy Birthday ✧</h1>
+
+<div class="slideshow">
+<img id="slide" src="foto1.jpg">
+</div>
+
+<p>Selamat ulang tahun ya, Dek. 🎂</p>
+
+<p>Selamat ulang tahun ya, Dek. 🎂</p>
+
+<p>Di hari ulang tahun adek ini, mas cuma bisa mendoakan dari jauh. Semoga adek selalu diberikan panjang umur, kesehatan, kebahagiaan, dan jalan hidup yang penuh kebaikan. Semoga setiap langkah adek selalu dilindungi, dimudahkan, dan suatu hari nanti semua impian adek bisa tercapai satu per satu.</p>
+
+<p>Mas tahu sekarang hubungan kita sudah tidak seperti dulu lagi. Sekarang mas hanya jadi mantan adek. Tapi jujur saja, perasaan sayang dan rasa peduli itu tidak pernah benar-benar hilang. Mas tetap ingin melihat adek baik-baik saja, melihat adek berhasil, dan melihat adek menjalani hidup dengan baik.</p>
+
+<p>Sebentar lagi adek juga akan menghadapi UKK dan ujian-ujian lainnya menjelang kelulusan sekolah. Mas cuma ingin berpesan, coba lebih serius lagi dalam belajar ya!!. Kurangi bermain/hiling dulu dek. Kalau ada waktu libur, gunakan untuk belajar atau membantu ibuk di rumah. Hal kecil seperti itu mungkin terlihat biasa, tapi sebenarnya sangat berarti, apalagi untuk ibuk.</p>
+
+<p>Mas percaya adek sebenarnya mampu. Kalau adek mau berusaha dan tidak menyerah, pasti nanti saat kelulusan adek bisa mendapatkan nilai yang baik dan membanggakan. Jadi semua waktu yang adek pakai untuk belajar tidak akan pernah sia-sia. Semoga setelah lulus nanti adek juga bisa mendapatkan pekerjaan yang baik dan layak, supaya adek bisa membantu keluarga dan membuat hidup adek menjadi lebih baik.</p>
+
+<p>Ada satu hal lagi yang ingin mas sampaikan.</p>
+
+<p>Walaupun sekarang mas hanya mantan, mas tetap peduli sama adek. Mas tidak ingin melihat adek disakiti lagi oleh siapa pun. Mas tidak ingin ada orang yang merusak adek atau memperlakukan adek dengan tidak baik. Karena bagi mas, adek tetap seseorang yang sangat berharga.</p>
+
+<p>Mungkin sekarang raga mas tidak lagi berada di samping adek seperti dulu. Tapi jiwa Mas akan selalu mendampingi adek, mas tetap mendoakan adek, tetap berharap adek baik-baik saja, dan tetap ingin adek memiliki masa depan yang indah.</p>
+
+<p>Kalau suatu saat nanti adek berhasil, lulus dengan nilai bagus, mendapatkan pekerjaan yang baik, dan hidup bahagia bersama keluarganya adek… itu sudah cukup membuat mas ikut bahagia, walaupun mas hanya melihatnya dari jauh.</p>
+
+<p>Sekali lagi, selamat ulang tahun ya, Dek. Semoga umur adek dipenuhi berkah, langkah adek selalu dijaga, dan hati adek selalu dikuatkan. Dan semoga suatu hari nanti adek benar-benar menjadi orang yang sukses dan membanggakan.</p>
+
+<p>Jika besok atau kapanpun itu kalo mas dan adek sama-sama diberi kesempatan sama yang diatas berarti itu Allah Menakdirkan Jodoh.</p>
+
+<p>Mas selalu mendoakan yang terbaik untuk adek. 🤍</p>
+
+<div class="signature">
+— Mas Micin 🤍
+</div>
+
+</div>
+
+</div>
+
+<audio id="bgm" autoplay loop muted>
+    <source src="ssstik.io_1772716685056.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+    window.addEventListener("click", function() {
+        const audio = document.getElementById("bgm");
+        audio.muted = false;
+        audio.play();
+    }, { once: true });
+</script>
+
+<script>
+
+function start(){
+document.querySelector(".opening").style.display="none";
+document.getElementById("main").style.display="flex";
+document.getElementById("music").play();
+}
+
+/* SLIDESHOW SMOOTH */
+
+let images=[
+"foto1.jpg",
+"foto2.jpg",
+"foto3.jpg",
+"foto4.jpg"
+];
+
+let i=0;
+let slide=document.getElementById("slide");
+
+setInterval(()=>{
+
+slide.classList.add("fadeout");
+
+setTimeout(()=>{
+i++;
+if(i>=images.length){i=0;}
+slide.src=images[i];
+slide.classList.remove("fadeout");
+},1200);
+
+},5000);
+
+/* stars */
+
+for(let i=0;i<120;i++){
+let star=document.createElement("div");
+star.className="star";
+star.style.left=Math.random()*100+"%";
+star.style.top=Math.random()*100+"%";
+star.style.animationDuration=(1+Math.random()*3)+"s";
+document.body.appendChild(star);
+}
+
+/* hearts */
+
+for(let i=0;i<25;i++){
+let heart=document.createElement("div");
+heart.className="heart";
+heart.innerHTML="❤";
+heart.style.left=Math.random()*100+"%";
+heart.style.fontSize=(15+Math.random()*20)+"px";
+heart.style.animationDuration=(5+Math.random()*5)+"s";
+document.body.appendChild(heart);
+}
+
+/* balloons */
+
+for(let i=0;i<12;i++){
+let b=document.createElement("div");
+b.className="balloon";
+b.innerHTML="🎈";
+b.style.left=Math.random()*100+"%";
+b.style.animationDuration=(6+Math.random()*6)+"s";
+document.body.appendChild(b);
+}
+
+/* FIREWORK */
+
+function launchFirework(x,y){
+
+let colors=["#ff5252","#ffd740","#40c4ff","#69f0ae","#ff4081","#7c4dff"];
+
+for(let i=0;i<60;i++){
+
+let fire=document.createElement("div");
+fire.className="firework";
+
+fire.style.left=x+"px";
+fire.style.top=y+"px";
+
+fire.style.background=colors[Math.floor(Math.random()*colors.length)];
+
+let angle=Math.random()*360;
+let distance=80+Math.random()*120;
+
+let xMove=Math.cos(angle)*distance+"px";
+let yMove=Math.sin(angle)*distance+"px";
+
+fire.style.setProperty("--x",xMove);
+fire.style.setProperty("--y",yMove);
+
+document.body.appendChild(fire);
+
+setTimeout(()=>{
+fire.remove();
+},1500);
+
+}
+
+}
+
+/* auto fireworks */
+
+setInterval(()=>{
+
+let x=Math.random()*window.innerWidth;
+let y=Math.random()*window.innerHeight/2;
+
+launchFirework(x,y);
+
+},2000);
+
+</script>
+
+</body>
+</html>
